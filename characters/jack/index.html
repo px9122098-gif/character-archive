@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A cinematic character archive dedicated to Jack Wolfe, featuring an interactive portrait, detailed profile, and animated gallery.">
-    <meta name="theme-color" content="#120d15">
+    <meta name="description" content="A cinematic actor archive dedicated to Jack Wolfe, featuring an interactive portrait, detailed profile, and animated gallery.">
+    <meta name="theme-color" content="#0b0708">
     <title>Jack Wolfe — Actor Archive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +14,9 @@
 <body>
     <header class="site-header">
         <nav class="navigation" aria-label="Primary navigation">
+            <a class="navigation__link" href="../../index.html">Archive</a>
             <a class="navigation__link is-active" href="#home">Home</a>
-            <button
-                class="navigation__link navigation__button"
-                type="button"
-                aria-haspopup="dialog"
-                aria-controls="about-dialog"
-                aria-expanded="false"
-                data-open-about
-            >
-                About
-            </button>
+            <button class="navigation__link navigation__button" type="button" aria-haspopup="dialog" aria-controls="about-dialog" aria-expanded="false" data-open-about>About</button>
         </nav>
     </header>
 
@@ -32,7 +24,6 @@
         <section class="hero" id="home" aria-labelledby="hero-title">
             <img class="hero__background" src="assets/images/main_photo.webp" alt="" aria-hidden="true">
             <div class="hero__overlay" aria-hidden="true"></div>
-
             <div class="hero__title-group">
                 <span class="hero__title-outline" aria-hidden="true">Jack</span>
                 <h1 class="hero__title" id="hero-title">Jack</h1>
@@ -51,7 +42,6 @@
             </div>
 
             <img class="hero__character" src="assets/images/background.webp" alt="Jack Wolfe" fetchpriority="high">
-
             <a class="scroll-cue" href="#gallery" aria-label="Explore the gallery">
                 <span class="scroll-cue__mouse" aria-hidden="true"><span class="scroll-cue__dot"></span></span>
                 <span class="scroll-cue__label">Scroll</span>
@@ -60,104 +50,83 @@
 
         <section class="gallery" id="gallery" aria-labelledby="gallery-title">
             <header class="section-heading">
-                <p class="section-heading__eyebrow">Character archive · 01</p>
+                <p class="section-heading__eyebrow">Actor archive · 02</p>
                 <h2 class="section-heading__title" id="gallery-title">Gallery</h2>
-                <p class="section-heading__description">Illustrations, quiet moments, and the many faces of Jack Wolfe.</p>
+                <p class="section-heading__description">Stage lights, quiet moments, and the many faces of Jack Wolfe.</p>
             </header>
 
             <div class="gallery-row gallery-row--forward" data-marquee>
-                <div class="gallery-track">
-                    <div class="gallery-group">
-                        <figure class="gallery-card"><img src="assets/images/photo_1_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_2_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_3_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_5_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_7_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_9_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_10_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_14_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_16_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_20_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_22_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_23_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_24_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_26_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_28_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_29_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                    </div>
-                </div>
+                <div class="gallery-track"><div class="gallery-group">
+                    <figure class="gallery-card"><img src="assets/images/photo_1_2026-08-06_18-49-19.jpg" alt="Portrait of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_2_2026-08-06_18-49-19.jpg" alt="Jack Wolfe at an event" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_3_2026-08-06_18-49-19.jpg" alt="Editorial portrait of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_5_2026-08-06_18-49-19.jpg" alt="Studio portrait of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_7_2026-08-06_18-49-19.jpg" alt="Candid photograph of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_9_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in warm light" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_10_2026-08-06_18-49-19.jpg" alt="Close portrait of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_14_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in costume" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_16_2026-08-06_18-49-19.jpg" alt="Jack Wolfe on location" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_20_2026-08-06_18-49-19.jpg" alt="Jack Wolfe at the theatre" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_22_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in a dramatic portrait" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_23_2026-08-06_18-49-19.jpg" alt="Jack Wolfe outdoors" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_24_2026-08-06_18-49-19.jpg" alt="Fashion portrait of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_26_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in a stage look" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_28_2026-08-06_18-49-19.jpg" alt="Jack Wolfe smiling" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_29_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in cinematic lighting" loading="lazy" decoding="async"></figure>
+                </div></div>
             </div>
 
             <div class="gallery-row gallery-row--reverse" data-marquee>
-                <div class="gallery-track">
-                    <div class="gallery-group">
-                        <figure class="gallery-card"><img src="assets/images/photo_4_2026-08-06_18-49-19.jpg" alt="Summer character illustration" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_6_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_11_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_12_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_13_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_15_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_17_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_18_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_19_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_21_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_25_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_27_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_30_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_32_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                        <figure class="gallery-card"><img src="assets/images/photo_33_2026-08-06_18-49-19.jpg" alt="" loading="lazy" decoding="async"></figure>
-                    </div>
-                </div>
+                <div class="gallery-track"><div class="gallery-group">
+                    <figure class="gallery-card"><img src="assets/images/photo_4_2026-08-06_18-49-19.jpg" alt="Portrait of Jack Wolfe in a suit" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_6_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in a street scene" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_11_2026-08-06_18-49-19.jpg" alt="Black and white portrait of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_12_2026-08-06_18-49-19.jpg" alt="Jack Wolfe under stage lighting" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_13_2026-08-06_18-49-19.jpg" alt="Relaxed portrait of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_15_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in a dark outfit" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_17_2026-08-06_18-49-19.jpg" alt="Jack Wolfe against a gold backdrop" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_18_2026-08-06_18-49-19.jpg" alt="Jack Wolfe seated in an auditorium" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_19_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in soft light" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_21_2026-08-06_18-49-19.jpg" alt="Jack Wolfe at a premiere" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_25_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in an outdoor portrait" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_27_2026-08-06_18-49-19.jpg" alt="Close-up of Jack Wolfe" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_30_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in a warm-toned portrait" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_32_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in a theatrical scene" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_33_2026-08-06_18-49-19.jpg" alt="Jack Wolfe in profile" loading="lazy" decoding="async"></figure>
+                </div></div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
-        <span>Jack Wolfe</span>
-        <span>Character archive · 2026</span>
-    </footer>
+    <footer class="site-footer"><span>Jack Wolfe</span><span>Actor archive · 2026</span></footer>
 
     <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-title">
         <div class="about-dialog__shell">
-            <button class="about-dialog__close" type="button" aria-label="Close character profile" data-close-about><span aria-hidden="true">×</span></button>
-
+            <button class="about-dialog__close" type="button" aria-label="Close Jack Wolfe profile" data-close-about><span aria-hidden="true">×</span></button>
             <div class="about-dialog__visual">
                 <img src="assets/images/photo_11_2026-08-06_18-49-19.jpg" alt="Portrait of Jack Wolfe" loading="lazy" decoding="async">
-                <span class="about-dialog__number" aria-hidden="true">01</span>
-                <p class="about-dialog__visual-label"><br>Actor Archive</p>
+                <span class="about-dialog__number" aria-hidden="true">02</span>
+                <p class="about-dialog__visual-label">Stage &amp; Screen<br>Actor Archive</p>
             </div>
-
             <div class="about-dialog__content">
-                <p class="about-dialog__eyebrow">Actor profile · File 01</p>
+                <p class="about-dialog__eyebrow">Actor profile · File 02</p>
                 <h2 class="about-dialog__title" id="about-title">Jack<br>Wolfe</h2>
-                <p class="about-dialog__lead">A performer who brings quiet vulnerability, musical instinct, and emotional intensity to every role.</p>
-                <p>Jack Wolfe is an English actor whose work moves naturally between screen and stage. He reached an international audience as Wylan Hendriks in Netflix’s Shadow and Bone and appeared as Tim Walker and Prince Tamino in The Magic Flute.</p>
-                <p>His theatre work has been equally defining. As Gabe in Next to Normal, Wolfe brought remarkable sensitivity and emotional precision to the role. He later made his Broadway debut as Orpheus in Hadestown.</p>
-
-                <div class="about-dialog__note">
-                    <span>Perfomance note</span>
-                    <p>His performances often balance openness and restraint — a quiet vulnerability that can transform into an unmistakable stage presence.</p>
-                </div>
-
+                <p class="about-dialog__lead">A performer who brings musical instinct, quiet vulnerability, and emotional intensity to every role.</p>
+                <p>Jack Wolfe is an English actor whose work moves naturally between screen and stage. He reached an international audience as Wylan Hendriks in <em>Shadow and Bone</em>, and appeared as Tim Walker and Prince Tamino in <em>The Magic Flute</em>.</p>
+                <p>His theatre work has been equally defining. As Gabe in <em>Next to Normal</em>, Wolfe brought remarkable sensitivity and emotional precision to the role. He later made his Broadway debut as Orpheus in <em>Hadestown</em>.</p>
+                <div class="about-dialog__note"><span>Performance note</span><p>His performances often balance openness and restraint — a quiet vulnerability that can transform into an unmistakable stage presence.</p></div>
                 <dl class="about-facts">
-                    <div><dt>Profession</dt><dd>Actor & singer</dd></div>
+                    <div><dt>Profession</dt><dd>Actor &amp; singer</dd></div>
                     <div><dt>Screen</dt><dd>Shadow and Bone</dd></div>
                     <div><dt>Film</dt><dd>The Magic Flute</dd></div>
                     <div><dt>Theatre</dt><dd>Next to Normal</dd></div>
                     <div><dt>Broadway</dt><dd>Hadestown</dd></div>
                     <div><dt>Training</dt><dd>Mountview Academy of Theatre Arts</dd></div>
                 </dl>
-
-                <div class="about-traits" aria-label="Character traits">
-                    <span>Expressive</span>
-                    <span>Musical</span>
-                    <span>Versatile</span>
-                    <span>Emotionally precise</span>
-                </div>
+                <div class="about-traits" aria-label="Jack Wolfe's artistic qualities"><span>Expressive</span><span>Musical</span><span>Versatile</span><span>Emotionally precise</span></div>
             </div>
         </div>
     </dialog>
-
     <script src="script.js"></script>
 </body>
 </html>
