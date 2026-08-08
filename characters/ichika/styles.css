@@ -1,0 +1,191 @@
+@import url("styles-base.css");
+
+/* Typography and layout refinements added after the first complete version. */
+
+:root {
+    --font-display: "Anton", "Arial Narrow", Impact, sans-serif;
+    --font-body: "Manrope", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+.hero__title,
+.hero__title-outline,
+.section-heading__title,
+.about-dialog__title,
+.about-dialog__number {
+    font-family: var(--font-display);
+    font-weight: 400;
+}
+
+.hero__title,
+.hero__title-outline {
+    letter-spacing: -0.025em;
+    line-height: 0.8;
+}
+
+.hero__title {
+    filter:
+        drop-shadow(0 1.5rem 4rem rgb(8 6 10 / 32%))
+        drop-shadow(0 0 2.5rem rgb(166 47 105 / 10%));
+}
+
+.section-heading__title,
+.about-dialog__title {
+    letter-spacing: -0.015em;
+}
+
+/* Both rows begin immediately; the second row is intentionally offset. */
+
+.gallery-row.is-ready.gallery-row--forward .gallery-track {
+    animation-duration: 58s;
+    animation-delay: -9s;
+}
+
+.gallery-row.is-ready.gallery-row--reverse .gallery-track {
+    animation-duration: 64s;
+    animation-delay: -27s;
+}
+
+@keyframes gallery-forward {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes gallery-reverse {
+    from { transform: translate3d(-50%, 0, 0); }
+    to { transform: translate3d(0, 0, 0); }
+}
+
+/* Expanded character profile. */
+
+.about-dialog__content {
+    align-self: stretch;
+    max-width: none;
+    overflow-y: auto;
+    padding-block: clamp(2.75rem, 4.5vw, 5rem);
+    scrollbar-color: var(--color-wine) transparent;
+    scrollbar-width: thin;
+}
+
+.about-dialog__visual-label {
+    position: absolute;
+    z-index: 2;
+    top: clamp(1.5rem, 3vw, 3rem);
+    left: clamp(1.5rem, 3vw, 3rem);
+    margin: 0;
+    color: rgb(255 247 250 / 76%);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.about-dialog__title {
+    margin-bottom: clamp(1.25rem, 2vw, 2rem);
+    font-size: clamp(4rem, 6.3vw, 7rem);
+}
+
+.about-dialog__lead {
+    max-width: 34rem;
+}
+
+.about-dialog__content > p:not([class]) {
+    max-width: 39rem;
+}
+
+.about-dialog__note {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+    max-width: 39rem;
+    margin-top: 1.75rem;
+    padding: 1.1rem 1.25rem;
+    border-left: 2px solid var(--color-pink);
+    background: linear-gradient(90deg, rgb(166 47 105 / 16%), transparent);
+}
+
+.about-dialog__note > span {
+    padding-top: 0.15rem;
+    color: var(--color-gold);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.about-dialog__note p {
+    margin: 0;
+    color: var(--color-text);
+    font-size: 0.86rem;
+    line-height: 1.65;
+}
+
+.about-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 39rem;
+    margin-top: 2rem;
+}
+
+.about-facts div {
+    min-width: 0;
+    padding: 0.95rem 1rem;
+}
+
+.about-facts dd {
+    line-height: 1.45;
+}
+
+.about-traits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    max-width: 39rem;
+    margin-top: 1.25rem;
+}
+
+.about-traits span {
+    padding: 0.48rem 0.72rem;
+    border: 1px solid rgb(238 155 179 / 20%);
+    border-radius: 999px;
+    background: rgb(255 247 250 / 4%);
+    color: var(--color-muted);
+    font-size: 0.61rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 82rem) {
+    .about-dialog__content {
+        padding: 2.75rem;
+    }
+}
+
+@media (max-width: 58rem) {
+    .about-dialog__content {
+        overflow: visible;
+        padding: 2.25rem 1.5rem 3rem;
+    }
+
+    .about-dialog__note {
+        grid-template-columns: 1fr;
+        gap: 0.45rem;
+    }
+
+    .about-facts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-row.is-ready .gallery-track {
+        animation: none;
+        transform: none;
+    }
+}
