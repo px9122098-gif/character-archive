@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Character Archive — two visual stories devoted to Ichika Amasawa and Jack Wolfe.">
-    <meta name="theme-color" content="#09070b">
+    <meta name="description" content="Character Archive — a growing collection of cinematic visual stories devoted to remarkable characters and performers.">
+    <meta name="theme-color" content="#07090f">
     <title>Character Archive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="archive-data.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#archive">Skip to character selection</a>
+
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Character Archive home">
         <span class="brand__mark" aria-hidden="true">CA</span>
@@ -22,43 +24,43 @@
           <small>Visual stories · 2026</small>
         </span>
       </a>
-      <p class="site-header__counter" aria-label="Two stories are available"><span>02</span> stories</p>
+      <p class="site-header__counter" data-archive-counter aria-live="polite"></p>
     </header>
 
-    <main class="archive" id="archive" aria-label="Choose a character archive">
-      <a class="portal portal--ichika" href="characters/ichika/index.html" data-portal="ichika">
-        <span class="portal__scene" aria-hidden="true"></span>
-        <span class="portal__shade" aria-hidden="true"></span>
-        <span class="portal__number" aria-hidden="true">01</span>
-        <span class="portal__content">
-          <span class="portal__eyebrow">Classroom of the Elite</span>
-          <span class="portal__name" aria-hidden="true">Ichika</span>
-          <span class="portal__surname">Amasawa</span>
-          <span class="portal__description">Playful intelligence.<br>A smile with a hidden edge.</span>
-          <span class="portal__action">Enter archive <span class="portal__arrow" aria-hidden="true">↗</span></span>
-        </span>
-        <img class="portal__figure" src="characters/ichika/assets/images/background.webp" alt="" aria-hidden="true">
-        <span class="sr-only">Open the Ichika Amasawa character archive</span>
-      </a>
+    <main class="archive-shell">
+      <header class="archive-intro">
+        <div>
+          <p class="archive-intro__eyebrow">Curated character files</p>
+          <h1>Choose a <span>story.</span></h1>
+        </div>
+        <p class="archive-intro__copy">A growing collection of visual portraits, each with its own atmosphere, rhythm, and point of view.</p>
+      </header>
 
-      <a class="portal portal--jack" href="characters/jack/index.html" data-portal="jack">
-        <span class="portal__scene" aria-hidden="true"></span>
-        <span class="portal__shade" aria-hidden="true"></span>
-        <span class="portal__number" aria-hidden="true">02</span>
-        <span class="portal__content">
-          <span class="portal__eyebrow">Actor Archive</span>
-          <span class="portal__name" aria-hidden="true">Jack</span>
-          <span class="portal__surname">Wolfe</span>
-          <span class="portal__description">Quiet intensity.<br>A performer between worlds.</span>
-          <span class="portal__action">Enter archive <span class="portal__arrow" aria-hidden="true">↗</span></span>
-        </span>
-        <img class="portal__figure" src="characters/jack/assets/images/background.webp" alt="" aria-hidden="true">
-        <span class="sr-only">Open the Jack Wolfe character archive</span>
-      </a>
+      <section class="archive" id="archive" aria-label="Choose a character archive"></section>
+      <noscript class="no-script">JavaScript is required to assemble the character collection.</noscript>
     </main>
 
-    <footer class="site-footer" aria-hidden="true">
-      <span>Select a story</span><span class="site-footer__line"></span><span>Hover · focus · enter</span>
+    <template id="portal-template">
+      <a class="portal" href="#">
+        <span class="portal__scene" aria-hidden="true"></span>
+        <span class="portal__shade" aria-hidden="true"></span>
+        <span class="portal__number" aria-hidden="true"></span>
+        <span class="portal__content">
+          <span class="portal__eyebrow"></span>
+          <span class="portal__name" aria-hidden="true"></span>
+          <span class="portal__surname"></span>
+          <span class="portal__description"></span>
+          <span class="portal__action">Enter archive <span class="portal__arrow" aria-hidden="true">↗</span></span>
+        </span>
+        <img class="portal__figure" src="" alt="" aria-hidden="true">
+        <span class="sr-only"></span>
+      </a>
+    </template>
+
+    <footer class="site-footer">
+      <span>Character Archive</span>
+      <span class="site-footer__line" aria-hidden="true"></span>
+      <span>A collection designed to grow</span>
     </footer>
   </body>
 </html>

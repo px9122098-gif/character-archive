@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A cinematic character archive dedicated to Satoru Gojo, featuring an interactive portrait, detailed profile, and animated gallery.">
+    <meta name="theme-color" content="#050713">
+    <title>Gojo Satoru — Sorcerer Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Primary navigation">
+            <a class="navigation__link" href="../../index.html">Archive</a>
+            <a class="navigation__link is-active" href="#home">Home</a>
+            <button class="navigation__link navigation__button" type="button" aria-haspopup="dialog" aria-controls="about-dialog" aria-expanded="false" data-open-about>About</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <img class="hero__background" src="assets/images/main_photo.webp" alt="" aria-hidden="true">
+            <div class="hero__overlay" aria-hidden="true"></div>
+
+            <div class="hero__title-group">
+                <span class="hero__title-outline" aria-hidden="true">Gojo</span>
+                <h1 class="hero__title" id="hero-title">Gojo</h1>
+                <p class="hero__surname"><span>Satoru</span><small>The strongest</small></p>
+            </div>
+
+            <div class="hero__photos" aria-hidden="true">
+                <figure class="hero-photo hero-photo--1"><img src="assets/images/photo_11.jpg" alt="" decoding="async"></figure>
+                <figure class="hero-photo hero-photo--2"><img src="assets/images/photo_21.webp" alt="" decoding="async"></figure>
+                <figure class="hero-photo hero-photo--3"><img src="assets/images/photo_16.jpg" alt="" decoding="async"></figure>
+                <figure class="hero-photo hero-photo--4"><img src="assets/images/photo_15.jpg" alt="" decoding="async"></figure>
+                <figure class="hero-photo hero-photo--5"><img src="assets/images/photo_17.webp" alt="" decoding="async"></figure>
+                <figure class="hero-photo hero-photo--6"><img src="assets/images/photo_5.jpg" alt="" decoding="async"></figure>
+            </div>
+
+            <img class="hero__character" src="assets/images/background.webp" alt="Satoru Gojo" fetchpriority="high">
+            <p class="hero__file" aria-hidden="true"><span>03</span> Infinite blue</p>
+
+            <a class="scroll-cue" href="#gallery" aria-label="Explore the gallery">
+                <span class="scroll-cue__mouse" aria-hidden="true"><span class="scroll-cue__dot"></span></span>
+                <span class="scroll-cue__label">Scroll</span>
+            </a>
+        </section>
+
+        <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+            <header class="section-heading">
+                <p class="section-heading__eyebrow">Sorcerer archive · 03</p>
+                <h2 class="section-heading__title" id="gallery-title">Infinity</h2>
+                <p class="section-heading__description">Between impossible distance and electric blue — the many faces of Satoru Gojo.</p>
+            </header>
+
+            <div class="gallery-row gallery-row--forward" data-marquee>
+                <div class="gallery-track"><div class="gallery-group">
+                    <figure class="gallery-card"><img src="assets/images/photo_1.jpg" alt="Gojo wearing dark glasses" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_10.webp" alt="Gojo smiling in warm sunlight" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_12.jpg" alt="Gojo standing in a bright doorway" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_13.jpg" alt="Gojo holding a white cat" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_14.jpg" alt="Pale blue profile portrait of Gojo" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_17.webp" alt="Gojo using a violet cursed technique" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_18.jpg" alt="Gojo beneath a bright blue sky" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_2.jpg" alt="Gojo resting in golden light" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_3.jpg" alt="Dark portrait of Gojo with his hand raised" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_4.jpg" alt="Gojo eating with chopsticks" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_5.jpg" alt="Blue eye reflected in round glasses" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_8.jpg" alt="Gojo revealing his eyes" loading="lazy" decoding="async"></figure>
+                </div></div>
+            </div>
+
+            <div class="gallery-row gallery-row--reverse" data-marquee>
+                <div class="gallery-track"><div class="gallery-group">
+                    <figure class="gallery-card"><img src="assets/images/photo_6.jpg" alt="Close illustration of Gojo's blue eyes and glasses" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_7.jpg" alt="Soft blue portrait of a smiling Gojo" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_9.webp" alt="Gojo standing before the moon" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_11.jpg" alt="Playful portrait of Gojo adjusting his glasses" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_15.jpg" alt="Extreme close-up of Gojo's Six Eyes" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_16.jpg" alt="Monochrome Gojo portrait with blue eyes" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_19.jpg" alt="Black and white manga illustration of Gojo" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_20.jpg" alt="Manga sketch of Gojo laughing" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_21.webp" alt="Graphic collage featuring Gojo" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_22.jpg" alt="Black and white Gojo character study" loading="lazy" decoding="async"></figure>
+                    <figure class="gallery-card"><img src="assets/images/photo_23.jpg" alt="Ink portrait of Gojo in profile" loading="lazy" decoding="async"></figure>
+                </div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><span>Satoru Gojo</span><span>Sorcerer archive · 2026</span></footer>
+
+    <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-title">
+        <div class="about-dialog__shell">
+            <button class="about-dialog__close" type="button" aria-label="Close Satoru Gojo profile" data-close-about><span aria-hidden="true">×</span></button>
+            <div class="about-dialog__visual">
+                <img src="assets/images/photo_18.jpg" alt="Satoru Gojo beneath a blue sky" loading="lazy" decoding="async">
+                <span class="about-dialog__number" aria-hidden="true">03</span>
+                <p class="about-dialog__visual-label">Jujutsu Kaisen<br>Sorcerer Archive</p>
+            </div>
+            <div class="about-dialog__content">
+                <p class="about-dialog__eyebrow">Character profile · File 03</p>
+                <h2 class="about-dialog__title" id="about-title">Satoru<br>Gojo</h2>
+                <p class="about-dialog__lead">An impossible distance wrapped in confidence, humour, and electric blue.</p>
+                <p>Satoru Gojo is a special grade jujutsu sorcerer and a teacher at Tokyo Jujutsu High. Born with both the Limitless technique and the Six Eyes, he understands cursed energy with extraordinary precision and is widely regarded as the strongest sorcerer of the modern era.</p>
+                <p>His playful arrogance hides a serious purpose. Gojo teaches because power alone cannot rebuild the jujutsu world; lasting change requires a new generation capable of thinking beyond its inherited rules.</p>
+                <div class="about-dialog__note"><span>Infinity note</span><p>His signature contrast defines the archive: unreachable power presented with effortless humour and a disarming smile.</p></div>
+                <dl class="about-facts">
+                    <div><dt>Series</dt><dd>Jujutsu Kaisen</dd></div>
+                    <div><dt>Role</dt><dd>Sorcerer &amp; teacher</dd></div>
+                    <div><dt>Rank</dt><dd>Special grade</dd></div>
+                    <div><dt>Technique</dt><dd>Limitless</dd></div>
+                    <div><dt>Innate gift</dt><dd>Six Eyes</dd></div>
+                    <div><dt>Domain</dt><dd>Unlimited Void</dd></div>
+                </dl>
+                <div class="about-traits" aria-label="Satoru Gojo's character traits"><span>Limitless</span><span>Perceptive</span><span>Irreverent</span><span>Protective</span></div>
+            </div>
+        </div>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+</html>
