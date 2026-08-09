@@ -103,7 +103,7 @@ body { font-family: var(--font-body); }
 .hero__title-outline {
     font-size: clamp(9rem, 17vw, 31rem);
     letter-spacing: -0.018em;
-    line-height: 0.72;
+    line-height: 0.82;
 }
 
 .hero__title {

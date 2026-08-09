@@ -5,7 +5,7 @@ const characters = Array.isArray(window.CHARACTER_ARCHIVES) ? window.CHARACTER_A
 const supportsPointerMotion = window.matchMedia("(hover: hover) and (pointer: fine)");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-function createPortal(character) {
+function createPortal(character, index) {
   const fragment = template.content.cloneNode(true);
   const portal = fragment.querySelector(".portal");
   const scene = fragment.querySelector(".portal__scene");
@@ -16,6 +16,7 @@ function createPortal(character) {
   portal.dataset.portal = character.slug;
   portal.style.setProperty("--accent", character.accent);
   portal.style.setProperty("--accent-soft", character.accentSoft);
+  portal.style.setProperty("--enter-delay", `${210 + index * 115}ms`);
 
   scene.style.backgroundImage = `url("${character.scene}")`;
   scene.style.backgroundPosition = character.scenePosition || "center";
@@ -62,7 +63,7 @@ function updateColumnCount() {
   archive.style.setProperty("--columns", Math.max(1, Math.min(maximum, characters.length)));
 }
 
-characters.forEach((character) => archive.append(createPortal(character)));
+characters.forEach((character, index) => archive.append(createPortal(character, index)));
 
 const count = characters.length.toString().padStart(2, "0");
 counter.innerHTML = `<span>${count}</span> ${characters.length === 1 ? "story" : "stories"}`;
